@@ -1,0 +1,19 @@
+<asx version="3.0">
+	<!-- GMX -->
+	<param name="encoding" value="utf-8" />
+	<title>CastUP: LiveHEB-Arvut</title>
+	<MOREINFO HREF = "" />
+
+	<entry>
+	<PARAM NAME="EntryType" VALUE="Content" />
+	
+	<param name="encoding" value="utf-8" />
+	<PARAM NAME="CastUP_AssociatedURL" VALUE="" />
+	<PARAM NAME="CastUP_Content_Config" VALUE="" />
+	<PARAM NAME="CastUP_Content_ClipMediaID" VALUE="25798" />
+	<author></author>
+	<title>CastUP: LiveHEB-Arvut</title>
+	<ref href="http://switch3.castup.net/cunet/gm.asp?ClipMediaID=25798&ak=21211917&curettype=1" />
+	</entry>
+
+</asx>

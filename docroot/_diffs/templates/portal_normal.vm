@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="#language("lang.dir")" dir="#language("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - arvut.org</title>
+	<meta content="תנועת הערבות היא תנועה חברתית, א-פוליטית, ששמה לה למטרה להעלות את חשיבות ערך הערבות ההדדית בקרב עם ישראל ובאנושות כולה." name="description" />
+	<!-- Facebook meta -->
+	<meta property="og:title" content="תנועת הערבות" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.arvut.org" />
+	<meta property="og:image" content="http://www.arvut.org/arvut-theme/images/custom/logo_small.png" />
+	<meta property="og:site_name" content="ערבות" />
+	<meta property="og:description" content="העולם נכנס לתקופה חדשה של גלובליזציה, שמוכיחה לנו יותר ויותר שכולנו מקושרים זה לזה. במצב החדש הזה מתגלה חוק שנקרא ערבות הדדית. האמצעי היחיד שיכול להציל אותנו. רק כשנפעל מתוך איחוד העם - נצליח!" />
+	
+	$theme.include($top_head_include)
+	#js ("$javascript_folder/jquery-1.6.2.min.js")
+	#js ("$javascript_folder/jquery.rs.slideshow.min.js")
+	#js ("$javascript_folder/audio-player.js")
+	
+	<!--[if lt IE 10]>
+		#js ("$javascript_folder/PIE.js")
+	<![endif]-->
+
+	<script type="text/javascript">
+		AudioPlayer.setup("$javascript_folder/player.swf", {  
+			width: 290,
+			rtl: "yes"
+        });
+
+		$(function() {
+		   if (window.PIE) {
+		       $('.rounded, .article-title, form.subscription, #slideshow .slide-container img, #navigation').each(function() {
+		           PIE.attach(this);
+		       });
+		   }
+		});
+	</script>
+	
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-3288058-63']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+</head>
+
+<body class="$css_class">
+
+#if($is_signed_in)
+	#dockbar()
+#end
+
+<div id="wrapper">
+	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
+
+	<header id="banner" role="banner">
+		<hgroup id="heading">
+			<h1 class="company-title">
+				#*<span class="under_construction">העם צמא לערבות הדדית</span>*#
+				<a class="logo" href="#" title="דף הבית - תנועת הערבות">
+					<span>תנועת הערבות</span>
+				</a>
+			</h1>
+			<div class="languages"> 
+				<a href="http://www.arvut.org/eng" lang="en-US">English</a>&nbsp;|&nbsp;
+				<a href="http://rus.arvut.org" lang="ru-RU">Русский</a>&nbsp;|&nbsp;
+				<a href="http://www.arvut.org" lang="iw-IL">עברית</a>&nbsp;|&nbsp;
+				<a href="http://www.arvut.org/arab" lang="ar-SA">العربية</a>
+			</div>	
+			<h2 class="community-title">
+				<a href="$community_default_url" title="#language("go-to") $community_name">
+					<span>$community_name</span>
+				</a>
+			</h2>
+
+			<h3 class="page-title">
+				<span>$the_title</span>
+			</h3>
+		</hgroup>
+
+		#if ($update_available_url)
+			<div class="popup-alert-notice">
+				<a class="update-available" href="$update_available_url">#language("updates-are-available-for-liferay")</a>
+			</div>
+		#end
+
+		#if ($has_navigation)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+	</header>
+
+	<div id="content">
+		#*
+		<nav class="site-breadcrumbs" id="breadcrumbs">
+			<h1>
+				<span>#language("breadcrumbs")</span>
+			</h1>
+
+			#breadcrumbs()
+		</nav>
+		*#
+
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+
+	<footer id="footer" role="contentinfo">
+		#*
+		<p class="powered-by">
+			#language("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+		</p>
+		*#		
+	</footer>
+</div>
+
+</body>
+
+$theme.include($bottom_include)
+
+</html>

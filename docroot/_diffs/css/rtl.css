@@ -1,0 +1,668 @@
+/* base.css */
+.rtl caption, .rtl th {
+    text-align: right;
+}
+.rtl ol, .rtl ul, .rtl dl {
+    margin-left: 1em;
+	margin-right:2em;
+}
+/* docbar.css */
+.rtl .dockbar .aui-toolbar {
+	float: right;
+	padding-right: 60px;
+}
+.rtl .dockbar .user-toolbar {
+	float: left;
+}
+.dockbar .menu-button span {
+	background: url() no-repeat 100% 50%;
+	padding-right: 20px;
+}
+.dockbar .menu-button {
+	background: url(../images/arrows/05_down.png) no-repeat 7% 50%;
+}
+/* portlet.css */
+.rtl .portlet{
+    text-align: right;
+}
+.rtl .portlet-icon-back {
+	background: url(../images/arrows/01_right.png) no-repeat 100% 50%;
+	padding: 5px 18px 5px 5px;
+}
+.rtl .portlet-topper-toolbar {
+    left: 3px;
+    text-align: left;
+    right: auto;
+}
+.rtl .portlet-msg-info {
+    background: url("../images/messages/info.png") no-repeat scroll 99% 50% #DFF4FF;
+    padding: 6px 30px 6px 6px;
+    text-align: right;
+}
+.rtl .portlet-msg-success {
+    background: url("../images/messages/success.png") no-repeat scroll 99% 50% #F4FDEF;
+    padding: 6px 30px 6px 6px;
+    text-align: right;
+}
+.rtl .portlet-msg-error {
+    background: url("../images/messages/error.png") no-repeat scroll 99% 50% #FFDDDD;
+    padding: 6px 30px 6px 6px;
+    text-align: right;
+}
+.rtl .lfr-actions.portlet-options .lfr-trigger strong a{
+    padding: 0;
+}
+/* forms.css */
+.rtl input[type="text"], .rtl input[type="password"], .rtl input[type="file"],
+ .rtl input[type="submit"], .rtl input[type="button"], .rtl input[type="reset"],
+ .rtl select, .rtl textarea, .rtl .textarea, .rtl button {
+    background: white url("../images/forms/input_shadow_rtl.png") no-repeat right top;
+}
+.rtl input[type="submit"]:hover, .rtl input[type="button"]:hover,
+.rtl input[type="reset"]:hover, .rtl button:hover, .rtl .lfr-actions:hover,
+.rtl .lfr-actions:hover ul {
+    background: #B9CED9 url(../images/application/state_hover_bg.png) repeat-x 0 0;
+}
+.rtl input[type="submit"], .rtl input[type="button"], .rtl input[type="reset"],
+.rtl button, .rtl .lfr-actions, .rtl .lfr-actions ul {
+    background: #D4D4D4 url(../images/portlet/header_bg.png) repeat-x 0 0;
+}
+/* application.css */
+.lfr-component, .lfr-component ul, .lfr-component li, .lfr-component dl, .lfr-component dt, .lfr-component dd {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}.rtl .aui-tagselector .lfr-tag-selector-input {
+    background: none;
+}
+.rtl .aui-tab {
+    float: right;
+}
+.rtl .lfr-panel-content ul li{
+    text-align: right;
+}
+/* Message Board (css.jsp) */
+.rtl .portlet-boundary .top-links{
+    float: left;
+}
+.rtl .portlet-boundary .top-links .top-links-navigation {
+    float: right;
+}
+.rtl .portlet-message-boards .top-links .category-search {
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+}
+.rtl .portlet-boundary .top-links .top-link {
+    border-left: 1px solid #BBBBBB;
+    border-right: 0 none;
+    margin: 0 0 0 0.5em;
+    padding: 0 0 0 0.5em;
+}
+.rtl .portlet-boundary .top-links .top-link.last {
+    border-width: 0;
+}
+.rtl .lfr-panel.lfr-collapsible .lfr-panel-titlebar {
+    background: url("/vlc-private-theme/images/arrows/05_down.png") no-repeat scroll 100% 50% transparent;
+    padding-right: 15px;
+}
+.rtl .lfr-panel.lfr-collapsed .lfr-panel-titlebar {
+    background-image: url("/vlc-private-theme/images/arrows/05_left.png");
+}
+.rtl .lfr-panel.lfr-extended .lfr-panel-titlebar {
+    background: #D6D6D6 url(/vlc-private-theme/images/application/panel_header.png) repeat-x 0 0;
+    padding: 2px;
+}
+.rtl .lfr-ctrl-panel .lfr-panel-title{
+	padding-right:5px;
+}
+.rtl #panel-manage-content .lfr-panel-title span{
+	background-position:100% 50%;
+	padding-left:0;
+	padding-right:25px;
+}
+.rtl .lfr-floating-trigger{
+	padding-right:3px ;
+	padding-left:15px ;
+	background-position:0% 50% ;
+}
+.rtl .lfr-panel-titlebar .lfr-panel-title {
+    float: right;
+}
+.rtl .lfr-panel-titlebar .lfr-panel-button {
+    float: left;
+}
+.rtl .taglib-header .header-back-to a {
+    float: left;
+}
+.rtl .taglib-search-iterator td.align-left {
+    text-align: right;
+}
+.rtl .taglib-search-iterator td.align-left img{
+	float:right !important;
+	margin-right:0 !important;
+	margin-left:5px;
+}
+.rtl .taglib-search-iterator td.align-right {
+    text-align: left;
+}
+.rtl .aui-field-label, .rtl .aui-field-labels-top .aui-field-label {
+    text-align: right;
+}
+.rtl .aui-choice-label, .rtl .aui-field-input-choice {
+    float: right;
+}
+.rtl .aui-field-input-choice {
+    margin: 0 0 0 0.4em;
+}
+.rtl .aui-legend {
+    right: 0;
+}
+.rtl .lfr-table tr th {
+    text-align: right;
+}
+.rtl .lfr-tag-selector-popup label input {
+    margin-left: 5px;
+}
+.rtl .lfr-actions {
+    float: left;
+    text-align: right;
+}
+.rtl .taglib-page-iterator .search-results {
+    float: right;
+}
+.rtl .lfr-actions.show-arrow .lfr-trigger strong a {
+    background: url("/vlc-private-theme/images/arrows/04_right.png") no-repeat scroll 99% 50% transparent;
+}
+.rtl .lfr-actions .lfr-trigger strong a {
+    padding: 2px 15px 2px 5px;
+}
+.rtl .aui-textboxlistentry-holder li {
+    float: right;
+    margin: 0 0 4px 5px;
+}
+.rtl .aui-panel-hd {
+   padding: 2px 10px 2px 3px;
+}
+.rtl .aui-panel-hd-text {
+    float: right;
+}
+.rtl .aui-panel-icons {
+    float: left;
+}
+.rtl .portlet-message-boards .subject {
+    float: right;
+}
+.rtl .taglib-asset-tags-summary .tag {
+    background: url("/vlc-private-theme/images/common/tag.png") no-repeat scroll 100% 50% transparent;
+    margin-lefrt: 3px;
+    padding: 2px 20px 2px 5px;
+}
+.rtl .taglib-ratings.thumbs {
+    float: right;
+}
+.rtl .portlet-message-boards .taglib-flags {
+    float: right;
+    margin-right: 20px;
+}
+.rtl .lfr-table tr td:last-child, .rtl .lfr-table tr td.last-child,
+.rtl .lfr-table tr th:last-child, .rtl .lfr-table tr th.last-child {
+    padding-left: 0;
+    padding-right: 5px;
+}
+.rtl .lfr-table tr td:first-child, .rtl .lfr-table tr td.first-child,
+.rtl .lfr-table tr th:first-child, .rtl .lfr-table tr th.first-child {
+    padding-right: 0;
+    padding-left: 5px;
+}
+.rtl .aui-rating-element{
+    float: right;
+}
+.rtl .taglib-workflow-status .workflow-status {
+    background: url("/vlc-private-theme/images/common/recent_changes.png") no-repeat scroll 100% 50% transparent;
+    margin-left: 5px;
+    padding: 2px 20px 2px 0;
+}
+.rtl .lfr-component, .rtl .lfr-component ul, .rtl .lfr-component li,
+.rtl .lfr-component dl, .rtl .lfr-component dt, .rtl .lfr-component dd {
+    margin: 0;
+    padding: 0;
+}
+.rtl .ltr .aui-column-content-first, .rtl .aui-column-content-last {
+    padding-right: 0;
+}
+.rtl .aui-column-last {
+    margin-left: -5px;
+    margin-right: 0;
+}
+.rtl .lfr-autorow-controls {
+    right: auto;
+    left: 5px;
+}
+.rtl .lfr-form-row-inline .aui-field {
+    margin-left: 5px;
+}
+.rtl .lfr-form-row .aui-field {
+    float: right;
+}
+.rtl .aui-tree-hitarea, .rtl .aui-tree-label, .rtl .aui-tree-icon {
+    float: right;
+}
+.rtl .aui-tree-expanded .aui-tree-hitarea {
+    background-image: url("/html/themes/control_panel/images/aui/arrows_rtl.png");
+    background-position: -32px 50%;
+}
+.rtl .aui-tree-expanded.aui-tree-node-over .aui-tree-hitarea {
+    background-position: 0 50%;
+}
+.rtl .aui-tree-collapsed .aui-tree-hitarea {
+    background-image: url("/html/themes/control_panel/images/aui/arrows_rtl.png");
+    background-position: -48px 50%;
+}
+.rtl .aui-tree-collapsed.aui-tree-node-over .aui-tree-hitarea {
+    background-position: -16px 50%;
+}
+.rtl .aui-tree-collapsed .aui-tree-node-hidden-hitarea, .rtl .aui-tree-expanded .aui-tree-node-hidden-hitarea {
+    background-image: none;
+}
+.rtl .aui-tabview-list, .rtl .aui-tabview-list-content{
+    margin: 0;
+}
+.rtl .aui-tabview-list, .rtl .aui-tabview-list-content {
+    margin-bottom: 1em;
+}
+.rtl .lfr-asset-column-details .lfr-asset-icon {
+    border-left: 1px solid #999999;
+    border-right: 0 none;
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+.rtl .lfr-asset-column-details .lfr-asset-subfolders, .rtl .lfr-asset-column-details .lfr-asset-date, .rtl .lfr-asset-column-details .lfr-asset-items {
+    background-position: 100% 50%;
+}
+.rtl .lfr-asset-column-details .lfr-asset-icon.last {
+    border-width: 0;
+}
+.lfr-upload-container .upload-file {
+    background: url("/html/themes/control_panel/images/file_system/small/jpg.png") no-repeat scroll 99% 50% #F0FAF0;
+}
+.rtl .lfr-upload-container .cancel-button{
+    left: 5px;
+    right: auto;
+    background-position: 100% 50%;
+    padding: 2px 20px 2px 0;
+}
+.rtl .lfr-button {
+    padding: 2px 20px 2px 20px;
+}
+.rtl .lfr-upload-container .upload-file{
+    padding: 5px 25px 5px 5px;
+}
+.rtl .lfr-upload-container .upload-complete {
+    background-image: url("/html/themes/control_panel/images/dock/my_place_current.png");
+}
+.rtl .lfr-upload-container .upload-error .error-message {
+    left: 5px;
+    right: auto;
+}
+.rtl .lfr-upload-container .upload-error {
+    background-color: #FFDDDD;
+    background-image: url("/html/themes/control_panel/images/messages/error.png");
+}
+.rtl .lfr-asset-column-content {
+    margin-left: 1em;
+    margin-right: 0;
+}
+.rtl .taglib-page-iterator .search-pages {
+    float: left;
+}
+.rtl .taglib-page-iterator .search-pages .delta-selector, .rtl .taglib-page-iterator .search-pages .page-selector, .rtl .taglib-page-iterator .search-pages .page-links {
+    float: right;
+}
+.rtl .taglib-page-iterator .search-pages .page-links span.first, .rtl .taglib-page-iterator .search-pages .page-links span.previous {
+    background-position: 100% 100%;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a.first, .rtl .taglib-page-iterator .search-pages .page-links span.first,
+.rtl .taglib-page-iterator .search-pages .page-links a.previous, .rtl .taglib-page-iterator .search-pages .page-links span.previous {
+    padding-left: 5px;
+}
+.rtl .taglib-page-iterator .search-pages .page-links span.first, .rtl .taglib-page-iterator .search-pages .page-links span.previous {
+    background-position: 100% 100%;
+}
+.rtl .taglib-page-iterator .search-pages .page-links span {
+    background-position: 100% 100%;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a.first, .rtl .taglib-page-iterator .search-pages .page-links span.first {
+    background-image: url("/html/themes/control_panel/images/arrows/paging_first_rtl.png");
+    border-right: 0 none;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a.first {
+    background-position: 100% 0;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a.previous, .rtl .taglib-page-iterator .search-pages .page-links span.previous {
+    background-image: url("/html/themes/control_panel/images/arrows/paging_previous_rtl.png");
+}
+.rtl .taglib-page-iterator .search-pages .page-links a.previous {
+    background-position: 100% 0;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a.next, .rtl .taglib-page-iterator .search-pages .page-links span.next,
+.rtl .taglib-page-iterator .search-pages .page-links a.last, .rtl .taglib-page-iterator .search-pages .page-links span.last {
+    background-position: 0 0;
+    padding-right: 5px;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a.next, .rtl .taglib-page-iterator .search-pages .page-links span.next {
+    background-image: url("/html/themes/control_panel/images/arrows/paging_next_rtl.png");
+}
+.rtl .taglib-page-iterator .search-pages .page-links span {
+    background-position: 100% 100%;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a.next, .rtl .taglib-page-iterator .search-pages .page-links span.next,
+.rtl .taglib-page-iterator .search-pages .page-links a.last, .rtl .taglib-page-iterator .search-pages .page-links span.last {
+    background-position: 0 0;
+    padding-right: 5px;
+}
+.rtl .taglib-page-iterator .search-pages .page-links span.next {
+    background-position: 0 100%;
+}
+.rtl .taglib-page-iterator .search-pages .page-links span.last {
+    background-position: 0 100%;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a.last, .rtl .taglib-page-iterator .search-pages .page-links span.last {
+    background-image: url("/html/themes/control_panel/images/arrows/paging_last_rtl.png");
+    background-repeat: no-repeat;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a, .rtl .taglib-page-iterator .search-pages .page-links span {
+    padding: 2px 15px;
+    border-right: 1px solid #CCCCCC;
+    border-left: 0 none;
+}
+.rtl .taglib-page-iterator .search-pages .page-links a, .rtl .taglib-page-iterator .search-pages .page-links span {
+    background: url() no-repeat 0 0;
+}
+/* Board (css.jsp) */
+.rtl .taglib-ratings.stars .liferay-rating-vote, .rtl .taglib-ratings.stars .liferay-rating-score {
+    float: right;
+}
+.rtl .taglib-social-bookmarks li a {
+    padding: 3px 20px 3px 2px;
+}
+.rtl .taglib-social-bookmarks li {
+    float: right;
+    margin-left: 1em;
+    margin-right: 0;
+}
+.rtl .taglib-social-bookmarks a{
+    background-position: 100% 50%;
+}
+.rtl .taglib-ratings.stars .liferay-rating-score {
+    padding-right: 15px;
+    padding-left: 0;
+}
+/* Calendar (css.jsp) */
+.rtl .portlet-calendar td.lfr-top {
+    padding: 0 0 0 10px !important;
+}
+.rtl .portlet-calendar table.calendar td.lfr-top{
+    padding: 5px !important;
+}
+.rtl .taglib-calendar tr th, .rtl .taglib-calendar tr td {
+    text-align: center;
+}
+.rtl .aui-datepicker-display, .rtl .aui-datepicker-select-wrapper, .rtl .aui-field-date .aui-datepicker-display,
+.rtl .aui-field-date .aui-datepicker-select-wrapper, .rtl .aui-datepicker-button-wrapper {
+    float: right;
+}
+.rtl .gecko .lfr-input-time, .rtl .ie .lfr-input-time {
+    padding-right: 2px;
+}
+.rtl .lfr-input-time {
+    clear: left;
+    float: right;
+}
+.rtl .aui-icon-circle-triangle-l, .rtl .aui-icon-circle-triangle-r {
+    text-decoration: none;
+}
+/* Common (css.jsp) */
+.rtl .lfr-portlet-toolbar .lfr-toolbar-button a{
+	float:right;
+	padding: 4px 29px 4px 14px;
+}
+.rtl .lfr-portlet-toolbar .lfr-toolbar-button a{
+	background-position: 95% 50%;
+}
+
+/* Categoies (main.jsp) */
+.rtl .aui-widget-bd .asset-category-layer {
+    text-align: right;
+}
+/* Poll (main.jsp) */
+.rtl .portlet-polls .choice .aui-field {
+    float: right;
+}
+.rtl .portlet-polls .choice label {
+    float: right;
+    margin: 0.5em 0 0 0.5em;
+}
+/* Calendar (main.jsp) */
+.rtl .portlet-calendar .calendar-day {
+    float: right;
+}
+.rtl .portlet-calendar .event-duration-hour {
+    float: right;
+}
+.rtl .portlet-calendar .property-list dt, .rtl .portlet-calendar .property-list dd {
+    float: right;
+}
+.rtl .portlet-calendar .property-list dt {
+    clear: right;
+}
+.rtl .portlet-calendar .property-list dd, .rtl .portlet-calendar .property-list dd {
+    padding-right: 5px;
+}
+.rtl .portlet-calendar .property-list {
+    margin-right: 0;
+    padding: 0;
+}
+.rtl .portlet-calendar .day-grid {
+    margin-right: 50px;
+    margin-left: 0;
+}
+.rtl .portlet-calendar .day-grid .hour span {
+    right: -50px;
+    left: auto;
+}
+.rtl .portlet-calendar .event-edit {
+    float: left !important;
+}
+.rtl .portlet-calendar table.calendar td.lfr-top td[align=right]{
+    text-align: left;
+}
+/* Blogs (main.jsp) */
+.rtl .portlet-blogs .search-form {
+    float: left;
+}
+.rtl .portlet-blogs .entry-date {
+    background: url("/html/themes/control_panel/images/common/date.png") no-repeat scroll 100% 50% transparent;
+    padding-right: 25px;
+}
+.rtl .portlet-blogs .entry-author {
+    background: url("/html/themes/control_panel/images/portlet/edit_guest.png") no-repeat scroll 100% 50% transparent;
+    border-left: 1px solid #999999;
+    border-right: 0 none;
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+    padding-right: 25px;
+    padding-left: 10px;
+}
+.rtl .portlet-blogs .stats {
+    float: right;
+    padding-left: 10px;
+    padding-right: 0;
+}
+.rtl .portlet-blogs .taglib-flags {
+    border-right: 1px solid #999999;
+    border-left: 0 none;
+}
+/* Image Gallery (main.jsp) */
+.rtl .portlet-image-gallery .image-thumbnail {
+    float: right;
+}
+/* Message Board (main.jsp) */
+.rtl .portlet-message-boards .category-subscription-types {
+    float: left;
+}
+.rtl .portlet-message-boards .message-container .user-info {
+    border-left: 1px solid #CCCCCC;
+}
+.rtl .portlet-message-boards .thread-navigation {
+    float: right;
+}
+.rtl .portlet-message-boards .thread-actions {
+    float: left;
+}
+.rtl .portlet-message-boards .edit-controls {
+    float: left;
+}
+.rtl .portlet-message-boards .quote-content {
+    padding: 5px 35px 10px;
+}
+.rtl .portlet-message-boards .statistics-panel-content dt {
+    float: right;
+    margin-left: 1em;
+}
+.rtl .portlet-message-boards .thread-priority {
+    float: right;
+    margin: 0 -5px 0 5px;
+}
+/* Control Panel (main.jsp) */
+.rtl .portlet-configuration .archived-setups {
+    margin-left: 2em;
+    text-align: left;
+}
+/* Admin (main.jsp) */
+.rtl .portlet-enterprise-admin .form-section {
+    float: right;
+}
+.rtl .portlet-enterprise-admin .form-navigation .user-info .avatar, .rtl .portlet-enterprise-admin .form-navigation .organization-info .avatar {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.rtl .portlet-enterprise-admin .form-navigation {
+    margin: 0 15px 0 0;
+    padding: 10px;
+}
+.rtl .portlet-enterprise-admin .form-navigation li.selected {
+    background: url("/html/themes/control_panel/images/control_panel/selected_rtl.png") no-repeat scroll 100% 50% transparent;
+    right: -22px;
+    left: auto;
+    margin-left: -22px;
+    margin-right: 0;
+    padding: 0;
+    position: relative;
+}
+.rtl .portlet-enterprise-admin .form-navigation li.selected a {
+    margin: 0 11px 0 0;
+}
+.rtl .portlet-enterprise-admin .form-navigation li a {
+    padding: 2px 5px 2px 0;
+}
+.rtl .portlet-enterprise-admin .instant-messenger .aui-field, .rtl .portlet-enterprise-admin .social-network .aui-field {
+    float: right;
+}
+.rtl .portlet-enterprise-admin .instant-messenger img, .rtl .portlet-enterprise-admin .social-network img {
+    margin-right: 1em;
+}
+.rtl .aui-tree-container {
+    margin: 0 20px 0 0;
+}
+.rtl .portlet-communities .lfr-current-theme .theme-screenshot, .rtl .portlet-enterprise-admin .lfr-current-theme .theme-screenshot {
+    float: right;
+}
+.rtl .portlet-communities .lfr-current-theme .theme-details, .rtl .portlet-enterprise-admin .lfr-current-theme .theme-details {
+    padding: 0 170px 0 2px;
+}
+.rtl .portlet-communities .lfr-available-themes .header-title, .rtl .portlet-enterprise-admin .lfr-available-themes .header-title {
+    float: right;
+}
+.rtl .portlet-communities .lfr-theme-list li, .rtl .portlet-enterprise-admin .lfr-theme-list li {
+    float: right;
+    margin: 0 0 1.3em 1.3em;
+}
+.rtl .portlet-journal .add-permission-button-row {
+    float: right;
+}
+.rtl .portlet-journal .subscribe-link {
+    float: left;
+}
+/* custom.css */
+.rtl .lfr-ctrl-panel .panel-page-category .selected-portlet a {
+    background: url("../images/common/selected_portlet_arrow-rtl.png") no-repeat scroll left 50% transparent;
+}
+.rtl #banner #heading .logo {
+/*    background: url("../images/common/company_logo.png") no-repeat scroll 100% 50% transparent;*/
+	background-position:100% 50%;
+    padding-right: 35px;
+}
+.rtl .lfr-ctrl-panel .portlet {
+    padding: 0 15px 10px 0;
+}
+.lfr-ctrl-panel .panel-page-body-content {
+    padding-right: 0;
+}
+.rtl .portlet-enterprise-admin .form-navigation {
+    float: left;
+}
+.rtl .lfr-ctrl-panel .panel-page-body.panel-page-frontpage .portlet-msg-info {
+    margin-right: 15px;
+}
+.rtl .portlet-communities .lfr-available-themes .install-themes, .rtl .portlet-enterprise-admin .lfr-available-themes .install-themes {
+    float: left;
+}
+.rtl .lfr-ctrl-panel .panel-page-menu {
+    background-image: url("../images/control_panel/panel_shadow_rtl.png");
+    background-position: 0 0;
+}
+/* custom_common.css */
+.rtl .site-breadcrumbs li {
+    margin-left: 0;
+    padding-right: 0.75em;
+    padding-left: 0;
+}
+.rtl .breadcrumbs li {
+    background: url("../images/arrows/05_right.png") no-repeat scroll 0 50% transparent;
+    margin-left: 5px;
+    padding-left: 15px;
+}
+.rtl .site-breadcrumbs li span {
+    background: url("../images/common/breadcrumbs_rtl.png") no-repeat scroll 0 50% transparent;
+    padding: 0.5em 0 0.5em 15px;
+}
+.rtl .site-breadcrumbs li {
+background-image: none;
+}
+/* ??? */
+
+.rtl .lfr-component.lfr-menu-list{
+    /*left: 120px !important;*/
+}
+.rtl .portlet-section-body.results-row td>img, .rtl .portlet-section-alternate.results-row td>img{
+    margin-right: -10px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.rtl .twtr-widget .twtr-tweet, .twtr-widget .twtr-hd{
+	text-align: right;
+}
+.rtl .twtr-widget-profile img.twtr-profile-img {
+	float: right;
+	margin: 0 0 0 10px;
+}
