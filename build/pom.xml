@@ -1,0 +1,94 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>info.kab.arvut</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>build</artifactId>
+	<name>Build</name>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/server</directory>
+				<targetPath>${project.build.directory}/server</targetPath>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<excludeDefaultDirectories>true</excludeDefaultDirectories>
+					<filesets>
+						<fileset>
+							<directory>target</directory>
+							<includes>
+								<include>**</include>
+							</includes>
+							<excludes>
+								<exclude>server/**</exclude>
+							</excludes>
+						</fileset>
+						<fileset>
+							<directory>.</directory>
+							<includes>
+								<exclude>test-output/**</exclude>
+							</includes>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<configuration>
+							<outputDirectory>${project.build.directory}/server</outputDirectory>
+							<includeArtifactIds>tomcat</includeArtifactIds>
+						</configuration>
+						<goals>
+							<goal>unpack-dependencies</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<!--
+					Set file permissions for *nix systems. This can be removed once bug
+					http://jira.codehaus.org/browse/MASSEMBLY-337 is *actually* resolved.
+				-->
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<phase>process-resources</phase>
+						<configuration>
+							<target>
+								<chmod dir="target" includes="**" perm="755" />
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<!-- Liferay tomcat server -->
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>tomcat</artifactId>
+			<version>${liferay.version}</version>
+			<type>zip</type>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+</project>
