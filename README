@@ -1,0 +1,12 @@
+This project is a Liferay Theme (and Hook) for the arvut.org site.
+
+To build it, check out the repository and run "mvn install" from the root
+directory (make sure you have maven installed).
+
+To run the server, just launch startup.sh/bat from the
+    build/target/server/tomcat/bin
+directory.
+
+You can import the project into IntelliJ the usual way - by creating a new
+project using the "Import project from External Model" option, and pointing
+to the local repository.
