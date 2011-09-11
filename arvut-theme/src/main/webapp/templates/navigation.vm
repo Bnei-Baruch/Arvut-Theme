@@ -11,7 +11,9 @@
 			#else
 				<li>
 			#end
-				<a href="$nav_item.getURL()" $nav_item.getTarget()><span>$nav_item.icon() $htmlUtil.escape($nav_item.getName())</span></a>
+				<a href="$nav_item.getURL()" $nav_item.getTarget() class="$nav_item.layout.friendlyURL.substring(1)">
+					<span>$nav_item.icon() $htmlUtil.escape($nav_item.getName())</span>
+				</a>
 			</li>
 		#end
 	</ul>

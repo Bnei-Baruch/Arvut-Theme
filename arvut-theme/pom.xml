@@ -9,7 +9,7 @@
 		<version>1.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>arvut.org-theme</artifactId>
+	<artifactId>arvut-theme</artifactId>
 	<packaging>war</packaging>
 	<name>arvut.org Theme</name>
 

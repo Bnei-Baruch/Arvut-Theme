@@ -75,7 +75,6 @@
 					<artifactId>maven-war-plugin</artifactId>
 					<version>2.1.1</version>
 					<configuration>
-						<attachClasses>true</attachClasses>
 						<outputDirectory>${basedir}/${deploy.dir}</outputDirectory>
 					</configuration>
 				</plugin>
