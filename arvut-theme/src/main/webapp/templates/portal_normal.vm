@@ -14,18 +14,18 @@
 	<meta property="og:image" content="http://www.arvut.org/arvut-theme/images/custom/logo_small.png" />
 	<meta property="og:site_name" content="ערבות" />
 	<meta property="og:description" content="העולם נכנס לתקופה חדשה של גלובליזציה, שמוכיחה לנו יותר ויותר שכולנו מקושרים זה לזה. במצב החדש הזה מתגלה חוק שנקרא ערבות הדדית. האמצעי היחיד שיכול להציל אותנו. רק כשנפעל מתוך איחוד העם - נצליח!" />
-	
+
 	$theme.include($top_head_include)
 	#js ("$javascript_folder/jquery-1.6.2.min.js")
 	#js ("$javascript_folder/jquery.rs.slideshow.min.js")
 	#js ("$javascript_folder/audio-player.js")
-	
+
 	<!--[if lt IE 10]>
 		#js ("$javascript_folder/PIE.js")
 	<![endif]-->
 
 	<script type="text/javascript">
-		AudioPlayer.setup("$javascript_folder/player.swf", {  
+		AudioPlayer.setup("$javascript_folder/player.swf", {
 			width: 290,
 			rtl: "yes"
         });
@@ -38,7 +38,7 @@
 		   }
 		});
 	</script>
-	
+
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -52,7 +52,7 @@
 	  })();
 
 	</script>
-	
+
 </head>
 
 <body class="$css_class">
@@ -72,17 +72,30 @@
 					<span>תנועת הערבות</span>
 				</a>
 			</h1>
-			<div class="languages"> 
+
+			<div class="languages">
 				<a href="http://www.arvut.org/eng" lang="en-US">English</a>&nbsp;|&nbsp;
 				<a href="http://rus.arvut.org" lang="ru-RU">Русский</a>&nbsp;|&nbsp;
 				<a href="http://www.arvut.org" lang="iw-IL">עברית</a>&nbsp;|&nbsp;
 				<a href="http://www.arvut.org/arab" lang="ar-SA">العربية</a>
-			</div>	
+			</div>
+
 			<h2 class="community-title">
 				<a href="$community_default_url" title="#language("go-to") $community_name">
 					<span>$community_name</span>
 				</a>
 			</h2>
+
+			<div class="top-links-article-content">
+				#set ($locArticleGroupId = $getterUtil.getLong($themeDisplay.scopeGroupId))
+				#set ($jaServce = $serviceLocator.findService("com.liferay.portlet.journal.service.JournalArticleService"))
+				#set ($toplinksArticle = $jaServce.getArticleByUrlTitle($locArticleGroupId, "top-links"))
+				#set ($locArticleId = $toplinksArticle.articleId)
+				#set ($toplinksContent = $journalContentUtil.getContent($locArticleGroupId, "$locArticleId", "", "view", $themeDisplay.locale.toString(), $themeDisplay))
+				#if ($toplinksContent)
+					$toplinksContent
+				#end
+			</div>
 
 			<h3 class="page-title">
 				<span>$the_title</span>
@@ -127,7 +140,7 @@
 		<p class="powered-by">
 			#language("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
 		</p>
-		*#		
+		*#
 	</footer>
 </div>
 

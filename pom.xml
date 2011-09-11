@@ -17,7 +17,7 @@
 	</properties>
 
 	<modules>
-		<module>arvut.org</module>
+		<module>arvut-theme</module>
 		<module>build</module>
 	</modules>
 

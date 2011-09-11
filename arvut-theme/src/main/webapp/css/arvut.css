@@ -67,6 +67,18 @@ h1 .under_construction{
 	left: 0;
 }
 
+.top-links-article-content {
+	position:absolute;
+	right:0;
+	top:75px;
+	text-align: right;
+}
+
+.rtl .top-links-article-content {
+	left:0;
+	text-align: left;
+}
+
 #layout-column_column-1{
 	margin-bottom:10px;
 }
@@ -80,7 +92,7 @@ h1 .under_construction{
 
 .rtl .columns-2 #layout-column_column-2 {
 	margin-right:30px;
-}	
+}
 .ltr .columns-2 #layout-column_column-2 {
 	margin-left:30px;
 }
@@ -161,7 +173,7 @@ form.subscription #find_in_facebook{
 
 .web-form-portlet em{
 	font-style: normal;
-	color: #505050;	
+	color: #505050;
 }
 .web-form-portlet span.aui-legend{
 	border: none;
@@ -169,7 +181,7 @@ form.subscription #find_in_facebook{
 	line-height: 34px;
 	margin: 0 0 24px 0;
 	padding:0;
-	color: #00457C;	
+	color: #00457C;
 }
 
 /* Content article */
